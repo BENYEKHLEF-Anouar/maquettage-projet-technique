@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <!-- Fond décoratif subtil -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-32 -left-32 w-[500px] h-[500px] bg-blue-50 rounded-full opacity-60 blur-3xl">
+            </div>
+            <div class="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-blue-50 rounded-full opacity-40 blur-3xl">
+            </div>
+        </div>
+
+        <div class="relative max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+            <!-- Eyebrow -->
+            <p
+                class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
+                Notes publiques de la communauté
+            </p>
+
+            <!-- Titre -->
+            <h1 class="text-4xl font-bold text-slate-800 sm:text-5xl lg:text-6xl mb-6 leading-tight">
+                Explorez les idées<br>
+                <span class="text-blue-700">partagées par tous</span>
+            </h1>
+
+            <!-- Sous-titre -->
+            <p class="text-lg text-slate-500 font-normal max-w-2xl mx-auto mb-10 leading-relaxed">
+                Parcourez des notes organisées, filtrées et partagées par vos pairs. La connaissance est plus forte
+                quand elle circule.
+            </p>
+
+            <!-- CTA -->
+            <div class="flex flex-col sm:flex-row justify-center gap-3">
+                <button type="button"
+                    class="py-3.5 px-8 inline-flex justify-center items-center gap-2.5 rounded-xl font-semibold bg-blue-700 text-white hover:bg-blue-800 active:scale-[0.98] transition-all text-sm shadow-lg shadow-blue-700/20">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="19" y1="8" x2="19" y2="14" />
+                        <line x1="22" y1="11" x2="16" y2="11" />
+                    </svg>
+                    Créer mon compte
+                </button>
+                <button type="button"
+                    class="py-3.5 px-8 inline-flex justify-center items-center gap-2 rounded-xl font-semibold bg-white border border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 active:scale-[0.98] transition-all text-sm">
+                    Explorer les notes
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

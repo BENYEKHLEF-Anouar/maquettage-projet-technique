@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="p-8 bg-slate-900/30 min-h-screen flex items-center justify-center">
+    <!-- Overlay -->
+    <div class="fixed inset-0 bg-slate-900/30 backdrop-blur-sm"></div>
+
+    <!-- Modal -->
+    <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden">
+        <!-- Top accent line -->
+        <div class="h-1 bg-red-500 w-full"></div>
+
+        <div class="px-6 py-8 flex flex-col items-center text-center">
+            <!-- Icône danger -->
+            <div class="w-12 h-12 rounded-full bg-red-50 border border-red-100 flex items-center justify-center mb-5">
+                <svg class="w-6 h-6 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6h18" />
+                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                </svg>
+            </div>
+
+            <h3 class="text-base font-semibold text-slate-800 mb-2">Supprimer cette note ?</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">Cette action est irréversible. La note sera définitivement
+                supprimée.</p>
+        </div>
+
+        <!-- Actions -->
+        <div class="px-6 pb-6 flex gap-3">
+            <button
+                class="flex-1 py-2.5 px-4 text-sm font-medium bg-white border border-slate-200 text-slate-600 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all active:scale-[0.98]">
+                Annuler
+            </button>
+            <button
+                class="flex-1 py-2.5 px-4 text-sm font-semibold bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all active:scale-[0.98] shadow-md shadow-red-600/20">
+                Supprimer
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

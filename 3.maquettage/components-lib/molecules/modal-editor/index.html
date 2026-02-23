@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        input[type="checkbox"] {
+            accent-color: #0449AE;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900/30 min-h-screen flex items-center justify-center p-8">
+    <div class="fixed inset-0 bg-gray-900/50 backdrop-blur-sm"></div>
+
+    <div class="relative bg-white border border-gray-200 shadow-sm rounded-xl w-full max-w-lg flex flex-col">
+
+        <!-- Header -->
+        <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200">
+            <h3 class="font-bold text-gray-800">Nouvelle note</h3>
+            <button type="button"
+                class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 transition-colors">
+                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Body -->
+        <div class="p-4 overflow-y-auto">
+            <form onsubmit="event.preventDefault()">
+                <div class="space-y-4">
+
+                    <!-- Nom -->
+                    <div>
+                        <label for="note-name" class="block mb-2 text-sm font-medium text-gray-700">Nom</label>
+                        <input type="text" id="note-name"
+                            class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 outline-none transition-all"
+                            placeholder="Titre de la note...">
+                        <span class="text-xs text-red-600 mt-1 block hidden">Ce champ est requis.</span>
+                    </div>
+
+                    <!-- Contenu -->
+                    <div>
+                        <label for="note-content" class="block mb-2 text-sm font-medium text-gray-700">Contenu</label>
+                        <textarea id="note-content" rows="3"
+                            class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 outline-none transition-all resize-none"
+                            placeholder="Rédigez votre note..."></textarea>
+                        <span class="text-xs text-red-600 mt-1 block hidden">Ce champ est requis.</span>
+                    </div>
+
+                    <!-- Catégories -->
+                    <div>
+                        <label class="block mb-2 text-sm font-medium text-gray-700">Catégories</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="cat-travail"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
+                                <label for="cat-travail" class="text-sm text-gray-500 ms-3">Travail</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="cat-etudes"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
+                                <label for="cat-etudes" class="text-sm text-gray-500 ms-3">Études</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="cat-personnel"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
+                                <label for="cat-personnel" class="text-sm text-gray-500 ms-3">Personnel</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="cat-urgent"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
+                                <label for="cat-urgent" class="text-sm text-gray-500 ms-3">Urgent</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div>
+                        <label class="block mb-2 text-sm font-medium text-gray-700">Image</label>
+                        <input type="file" id="note-image" accept="image/*" onchange="previewImage(event)"
+                            class="block w-full border border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 file:bg-gray-50 file:border-0 file:me-4 file:py-3 file:px-4 file:text-sm file:font-medium file:text-gray-600 hover:file:bg-gray-100 transition-all">
+                        <span class="text-xs text-red-600 mt-1 block hidden">Format invalide.</span>
+
+                        <div id="image-preview-wrap" class="hidden mt-2">
+                            <p class="text-sm text-gray-500 mb-1">Aperçu</p>
+                            <img id="image-preview" src=""
+                                class="h-20 w-auto rounded-md object-cover border border-gray-200">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="flex justify-end items-center gap-x-2 py-3 border-t border-gray-200 mt-4">
+                    <button type="button"
+                        class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none transition-all">
+                        Annuler
+                    </button>
+                    <button type="submit"
+                        class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none transition-all">
+                        Enregistrer
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const wrap = document.getElementById('image-preview-wrap');
+            const img = document.getElementById('image-preview');
+            img.src = URL.createObjectURL(file);
+            wrap.classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>

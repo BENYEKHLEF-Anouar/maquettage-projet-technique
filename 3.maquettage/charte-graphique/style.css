@@ -1,0 +1,77 @@
+:root {
+  /* Royal Blue Primary Palette (#0449AE) */
+  --primary-50: #EBF2FC;
+  --primary-100: #D7E5F9;
+  --primary-200: #B0CCF3;
+  --primary-300: #89B3EE;
+  --primary-400: #3B7EDB;
+  --primary-500: #0449AE;
+  --primary-600: #03429D;
+  --primary-700: #023681;
+  --primary-800: #022A65;
+  --primary-900: #011E49;
+  --primary-950: #01132C;
+
+  /* Slate Neutrals */
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1E293B;
+  --slate-900: #0F172A;
+
+  /* Semantic */
+  --success: #10B981;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+}
+
+/* Base Styles */
+body {
+
+  .text-indigo-600,
+  .text-primary-600 {
+    color: #17A2B8 !important;
+  }
+
+  .text-indigo-700,
+  .text-primary-700 {
+    color: #138496 !important;
+  }
+
+  .text-indigo-800,
+  .text-primary-800 {
+    color: #0e6472 !important;
+  }
+
+  .border-indigo-400\/20 {
+    border-color: rgba(23, 162, 184, 0.2) !important;
+  }
+
+  .shadow-indigo-100 {
+    --tw-shadow-color: rgba(23, 162, 184, 0.1) !important;
+  }
+
+  .hover\:bg-indigo-700:hover {
+    background-color: #138496 !important;
+  }
+
+  .focus\:ring-indigo-500:focus {
+    --tw-ring-color: #17A2B8 !important;
+  }
+
+  .from-indigo-500 {
+    --tw-gradient-from: #17A2B8 !important;
+    --tw-gradient-to: rgb(23 162 184 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .to-indigo-700 {
+    --tw-gradient-to: #117a8b !important;
+  }
+}

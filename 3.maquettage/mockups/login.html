@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Notepad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        input[type="checkbox"] {
+            accent-color: #0449AE;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 flex h-full items-center py-16">
+    <main class="w-full max-w-md mx-auto px-4">
+        <!-- Logo centré -->
+        <div class="text-center mb-8">
+            <a href="index.html" class="inline-flex flex-col items-center gap-3">
+                <div
+                    class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-700/20">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" />
+                        <path d="M15 3v6h6" />
+                        <path d="M8 13h8" />
+                        <path d="M8 17h4" />
+                    </svg>
+                </div>
+                <span class="text-2xl font-bold text-slate-800">Note<span class="text-blue-700">pad</span></span>
+            </a>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <!-- Card header -->
+            <div class="px-7 pt-7 text-center">
+                <h1 class="text-xl font-bold text-slate-800">Bon retour 👋</h1>
+                <p class="mt-1.5 text-sm text-slate-500">
+                    Pas encore de compte ?
+                    <a href="register.html" class="text-blue-700 font-semibold hover:underline">S'inscrire</a>
+                </p>
+            </div>
+
+            <!-- Form -->
+            <div class="px-7 py-7 space-y-4">
+                <!-- Email -->
+                <div class="space-y-1.5">
+                    <label for="email"
+                        class="block text-xs font-semibold uppercase tracking-widest text-slate-500">Adresse
+                        email</label>
+                    <input type="email" id="email"
+                        class="py-3 px-4 block w-full bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all outline-none"
+                        placeholder="vous@exemple.com" required>
+                </div>
+
+                <!-- Mot de passe -->
+                <div class="space-y-1.5">
+                    <div class="flex items-center justify-between">
+                        <label for="password"
+                            class="block text-xs font-semibold uppercase tracking-widest text-slate-500">Mot de
+                            passe</label>
+                        <a href="#" class="text-xs font-medium text-blue-700 hover:underline">Oublié ?</a>
+                    </div>
+                    <input type="password" id="password"
+                        class="py-3 px-4 block w-full bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all outline-none"
+                        placeholder="••••••••" required>
+                </div>
+
+                <!-- Remember me -->
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                    <input id="remember-me" type="checkbox" class="w-4 h-4 rounded border-slate-300">
+                    <span class="text-sm text-slate-600 font-medium">Se souvenir de moi</span>
+                </label>
+
+                <!-- Submit -->
+                <button type="submit"
+                    class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded-xl bg-blue-700 text-white hover:bg-blue-800 active:scale-[0.99] transition-all shadow-md shadow-blue-700/20 mt-2">
+                    Se connecter
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Demo link -->
+            <div class="px-7 pb-5 text-center">
+                <a href="dashboard.html" class="text-xs text-slate-400 hover:text-slate-600 transition-colors">
+                    Demo — Accéder au dashboard directement →
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

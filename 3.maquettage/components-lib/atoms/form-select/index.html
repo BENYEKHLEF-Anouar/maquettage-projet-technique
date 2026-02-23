@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="p-8 bg-slate-50 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-sm space-y-1.5">
+        <label for="select-label"
+            class="block text-xs font-semibold uppercase tracking-widest text-slate-500">Catégorie</label>
+        <div class="relative">
+            <select id="select-label"
+                class="appearance-none py-3 px-4 pr-10 block w-full bg-white border border-slate-200 rounded-xl text-sm text-slate-700 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all outline-none shadow-sm">
+                <option selected>Sélectionner...</option>
+                <option>Travail</option>
+                <option>Personnel</option>
+                <option>Urgent</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                <svg class="w-4 h-4 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

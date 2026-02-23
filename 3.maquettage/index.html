@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Kit Gallery - Portfolio Personnel</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script src="charte-graphique/tailwind.config.js"></script>
+</head>
+
+<body class="bg-gray-50 flex h-full overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 flex flex-col h-full flex-shrink-0">
+        <div class="p-4 border-b border-gray-200">
+            <div class="flex items-center gap-3 mb-2">
+                <div
+                    class="w-9 h-9 bg-blue-700 rounded-xl flex items-center justify-center shadow-md shadow-blue-700/20">
+                    <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M15.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" />
+                        <path d="M15 3v6h6" />
+                        <path d="M8 13h8" />
+                        <path d="M8 17h4" />
+                    </svg>
+                </div>
+                <h1 class="text-xl font-bold text-slate-800 tracking-tight">Note<span class="text-blue-700">pad</span>
+                </h1>
+            </div>
+            <p class="text-xs text-gray-500">UI Kit Gallery — Visual Identity</p>
+        </div>
+        <nav id="sidebar-nav" class="flex-1 overflow-y-auto p-4 space-y-6">
+            <!-- Sections injectées dynamiquement ici -->
+            <!-- Charte Graphique -->
+            <div>
+                <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Charte Graphique</h3>
+                <a href="#" onclick="loadComponent('charte-graphique/index.html', 'Charte Graphique')"
+                    class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                    <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                    Identity & Tokens
+                </a>
+            </div>
+
+            <!-- Atoms -->
+            <div>
+                <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 mt-4">Atoms</h3>
+                <div class="space-y-1">
+                    <a href="#" onclick="loadComponent('components-lib/atoms/logo/index.html', 'Logo')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Logo
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/atoms/nav-link/index.html', 'Nav Link')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Nav Link
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/atoms/btn-primary/index.html', 'Btn Primary')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Btn Primary
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/badge-category/index.html', 'Badge Category')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Badge Category
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/atoms/form-input/index.html', 'Form Input')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Form Input
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/form-textarea/index.html', 'Form Textarea')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Form Textarea
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/atoms/form-select/index.html', 'Form Select')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Form Select
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/form-checkbox/index.html', 'Form Checkbox')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Form Checkbox
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/btn-icon-action/index.html', 'Btn Icon Action')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Btn Icon Action
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/badge-visibility/index.html', 'Badge Visibility')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Badge Visibility
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/atoms/title-h1/index.html', 'Title H1')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Title H1
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/atoms/flash-message/index.html', 'Flash Message')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                        Flash Message
+                    </a>
+                </div>
+            </div>
+
+            <!-- Molecules -->
+            <div>
+                <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 mt-4">Molecules</h3>
+                <div class="space-y-1">
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/navbar-public/index.html', 'Navbar Public')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Navbar Public
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/navbar-private/index.html', 'Navbar Private')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Navbar Private
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/hero-section/index.html', 'Hero Section')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Hero Section
+                    </a>
+                    <a href="#" onclick="loadComponent('components-lib/molecules/filter-bar/index.html', 'Filter Bar')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Filter Bar
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/note-card-public/index.html', 'Note Card Public')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Note Card Public
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/dashboard-header/index.html', 'Dashboard Header')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Dashboard Header
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/note-table-row/index.html', 'Note Table Row')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Note Table Row
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/footer-simple/index.html', 'Footer Simple')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Footer Simple
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/modal-confirm/index.html', 'Modal Confirm')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Modal Confirm
+                    </a>
+                    <a href="#"
+                        onclick="loadComponent('components-lib/molecules/modal-editor/index.html', 'Modal Editor')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Modal Editor
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mockups -->
+            <div>
+                <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 mt-4">Mockups</h3>
+                <div class="space-y-1">
+                    <a href="#" onclick="loadComponent('mockups/index.html', 'Accueil Publique')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        Accueil Publique
+                    </a>
+                    <a href="#" onclick="loadComponent('mockups/dashboard.html', 'Dashboard')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        Dashboard
+                    </a>
+                    <a href="#" onclick="loadComponent('mockups/show.html', 'Vue Détail')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        Vue Détail
+                    </a>
+                    <a href="#" onclick="loadComponent('mockups/login.html', 'Login')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        Login
+                    </a>
+                    <a href="#" onclick="loadComponent('mockups/register.html', 'Register')"
+                        class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 group">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                        Register
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="p-4 border-t text-xs text-center text-gray-400">Powered by Preline UI</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col h-full bg-slate-100">
+        <div class="bg-white border-b border-gray-200 px-4 py-2 flex justify-between items-center shadow-sm z-10">
+            <h2 id="component-title" class="text-sm font-semibold text-gray-700">Sélectionnez un composant</h2>
+            <div class="flex gap-2">
+                <a id="open-new-tab" href="#" target="_blank"
+                    class="text-xs px-3 py-1.5 border rounded hover:bg-gray-50 text-gray-600 flex items-center gap-1 hidden">Ouvrir</a>
+                <div class="flex bg-gray-100 rounded p-0.5">
+                    <button onclick="resizeIframe('100%')"
+                        class="p-1.5 rounded hover:bg-white shadow-sm">Desktop</button>
+                    <button onclick="resizeIframe('768px')" class="p-1.5 rounded hover:bg-white">Tablet</button>
+                    <button onclick="resizeIframe('375px')" class="p-1.5 rounded hover:bg-white">Mobile</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 overflow-hidden flex justify-center bg-chess-pattern relative">
+            <iframe id="preview-frame" src=""
+                class="w-full h-full border-0 bg-white shadow-lg transition-all duration-300"></iframe>
+        </div>
+    </main>
+
+    <script>
+        function loadComponent(path, title) {
+            const frame = document.getElementById('preview-frame');
+            const titleEl = document.getElementById('component-title');
+            const openLink = document.getElementById('open-new-tab');
+            frame.classList.add('opacity-0');
+            setTimeout(() => {
+                frame.src = path;
+                titleEl.textContent = title;
+                openLink.href = path;
+                openLink.classList.remove('hidden');
+                frame.onload = () => frame.classList.remove('opacity-0');
+            }, 100);
+        }
+        function resizeIframe(width) { document.getElementById('preview-frame').style.width = width; }
+    </script>
+</body>
+
+</html>

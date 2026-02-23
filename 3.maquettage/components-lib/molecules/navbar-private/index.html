@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../../charte-graphique/tailwind.config.js"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen">
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200/80">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-8">
+                    <a href="#" class="flex items-center gap-2.5 group">
+                        <div
+                            class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:bg-blue-800 transition-all">
+                            <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" />
+                                <path d="M15 3v6h6" />
+                            </svg>
+                        </div>
+                        <span class="text-base font-bold text-slate-800">Note<span
+                                class="text-blue-700">pad</span></span>
+                    </a>
+                    <!-- Nav Links -->
+                    <div class="hidden md:flex items-center gap-1">
+                        <a href="#"
+                            class="relative px-3 py-1.5 text-sm font-semibold text-blue-700 bg-blue-50 rounded-lg">Mes
+                            Notes</a>
+                        <a href="#"
+                            class="px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-all">Explorer</a>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Bouton nouvelle note -->
+                    <button
+                        class="hidden sm:inline-flex items-center gap-2 py-2 px-4 text-sm font-semibold bg-blue-700 text-white rounded-xl hover:bg-blue-800 transition-all shadow-sm active:scale-[0.98]">
+                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                        Nouvelle note
+                    </button>
+                    <!-- Avatar -->
+                    <div class="flex items-center gap-2.5 pl-3 border-l border-slate-200">
+                        <span class="text-sm font-medium text-slate-600 hidden sm:block">Anouar B.</span>
+                        <div
+                            class="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center text-xs font-bold text-white">
+                            AB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

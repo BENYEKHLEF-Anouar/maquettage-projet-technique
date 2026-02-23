@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../charte-graphique/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="p-8 bg-slate-50 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-sm space-y-4">
+        <!-- Input texte -->
+        <div class="space-y-1.5">
+            <label for="input-title" class="block text-xs font-semibold uppercase tracking-widest text-slate-500">Titre
+                de la note</label>
+            <input type="text" id="input-title"
+                class="py-3 px-4 block w-full bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all outline-none"
+                placeholder="Ex: Mon plan de travail...">
+        </div>
+        <!-- Input email -->
+        <div class="space-y-1.5">
+            <label for="input-email"
+                class="block text-xs font-semibold uppercase tracking-widest text-slate-500">Adresse email</label>
+            <input type="email" id="input-email"
+                class="py-3 px-4 block w-full bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all outline-none"
+                placeholder="votre@email.com">
+        </div>
+    </div>
+</body>
+
+</html>

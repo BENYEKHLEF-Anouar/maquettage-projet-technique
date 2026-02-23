@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail de la Note - Notepad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white flex flex-col min-h-full">
+
+    <!-- Navbar Private -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <div class="flex items-center gap-8">
+                    <a href="dashboard.html" class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center shadow-sm">
+                            <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" />
+                                <path d="M15 3v6h6" />
+                                <path d="M8 13h8" />
+                                <path d="M8 17h4" />
+                            </svg>
+                        </div>
+                        <span class="text-base font-bold text-slate-800">Note<span
+                                class="text-blue-700">pad</span></span>
+                    </a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="dashboard.html"
+                        class="text-sm font-medium text-slate-500 hover:text-slate-800 transition-colors">Mes Notes</a>
+                    <div
+                        class="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center text-[10px] font-bold text-white ml-2">
+                        AB</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Header -->
+        <header class="mb-10 text-start">
+            <div class="flex items-center gap-2 mb-5">
+                <span
+                    class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Travail
+                </span>
+                <span
+                    class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Public
+                </span>
+            </div>
+            <h1 class="text-3xl font-bold text-slate-800 sm:text-4xl leading-snug">Optimiser son workflow Laravel</h1>
+            <div class="mt-5 flex items-center gap-4 text-sm text-slate-500 border-b border-slate-100 pb-6">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-7 h-7 rounded-full bg-blue-700 flex items-center justify-center text-[10px] font-bold text-white">
+                        AB</div>
+                    <span class="font-medium text-slate-700">Anouar B.</span>
+                </div>
+                <span class="text-slate-300">•</span>
+                <span>Publié le 23 février 2026</span>
+            </div>
+        </header>
+
+        <!-- Article -->
+        <article class="text-start text-slate-700 leading-relaxed space-y-5">
+            <p class="text-lg text-slate-700 leading-relaxed font-medium">
+                Le développement d'applications modernes demande une rigueur et des outils adaptés. Voici comment tirer
+                le meilleur parti de Laravel pour vos projets quotidiens.
+            </p>
+            <p class="text-sm text-slate-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <h2 class="text-xl font-bold text-slate-800 pt-4">1. Utiliser les Factories intelligemment</h2>
+            <p class="text-sm text-slate-500">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p>
+            <p class="text-sm text-slate-500">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+            </p>
+        </article>
+
+        <!-- Footer Actions -->
+        <div class="mt-14 pt-6 border-t border-slate-100 flex items-center justify-between">
+            <a href="dashboard.html"
+                class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-blue-700 transition-colors">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+                Retour au dashboard
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-slate-50 border-t border-slate-200 py-6">
+        <div
+            class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-400">© 2026 Notepad. Tous droits réservés.</p>
+            <div class="flex gap-6">
+                <a class="text-xs text-slate-400 hover:text-slate-700 transition-colors" href="#">Confidentialité</a>
+                <a class="text-xs text-slate-400 hover:text-slate-700 transition-colors" href="#">Aide</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
